@@ -4,15 +4,15 @@ function formatDate(date) {
   return date.toLocaleString();
 }
 
-function Me(props) {
+function Me({ date, text, author }) {
   return (
     <div className="Me">
       <div className="MyInfo">
-        <img src={props.author.logo} alt={props.author.name} />
-        <div className="MyInfo-name">{props.author.name}</div>
+        <img src={author.logo} alt={author.name} />
+        <div className="MyInfo-name">{author.name}</div>
       </div>
-      <div className="Me-text">{props.text}</div>
-      <div className="Me-date">{formatDate(props.date)}</div>
+      <div className="Me-text">{text}</div>
+      <div className="Me-date">{formatDate(date)}</div>
     </div>
   );
 }
