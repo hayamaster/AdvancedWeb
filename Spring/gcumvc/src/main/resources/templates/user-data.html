@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
+<html xmlns:th="https://thymeleaf.org">
 <body>
-$END$
+<h2>GCU MVC</h2>
+<label>User Name: </label>
+<label th:text="${user.name}"></label>
+<br/>
+<label>Email: </label>
+<label th:text="${user.email}"></label>
 </body>
 </html>
